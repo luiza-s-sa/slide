@@ -148,7 +148,7 @@ export class Slide {
 }
 
 
-export class SlideNav extends Slide { // quando tá estendendo não precisa criar constructor se o constructor for igual
+export default class SlideNav extends Slide { // quando tá estendendo não precisa criar constructor se o constructor for igual
   constructor(slide, wrapper, activeClass) {
     super(slide, wrapper, activeClass); // mas se precisar criar um constructor, tem que usar o super para puxar o construvtor da classe anterior
     this.bindControlEvents();
